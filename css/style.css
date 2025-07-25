@@ -93,3 +93,23 @@ body {
   color: white !important;
   border-radius: 4px;
 }
+
+.top-left {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-top {
+  height: 35px;
+}
+
+.tagline {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
