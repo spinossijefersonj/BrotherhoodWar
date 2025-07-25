@@ -1,0 +1,95 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+/* HERO SECTION */
+.hero {
+  height: 100vh;
+  background: url('../assets/bg-banner.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.hero-content {
+  text-align: center;
+}
+.logo-banner {
+  max-width: 90%;
+  height: auto;
+  margin-bottom: 30px;
+}
+.btn-wishlist {
+  padding: 12px 24px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border: none;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+.btn-wishlist:hover {
+  background-color: #ddd;
+}
+
+/* NAVBAR */
+.navbar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #2d3929;
+  padding: 20px 0;
+  z-index: 10;
+  transition: all 0.4s ease;
+}
+.navbar.fixed {
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+}
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  position: relative;
+  padding-bottom: 5px;
+  transition: all 0.3s ease;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: red;
+  transition: width 0.4s ease;
+}
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+.btn-buy {
+  background-color: red;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: white !important;
+  border-radius: 4px;
+}
